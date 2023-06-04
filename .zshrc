@@ -122,3 +122,12 @@ SPACESHIP_CHAR_SUFFIX=" "
 . $HOME/.asdf/asdf.sh
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 export PATH=/home/joao/neovim/bin:/home/joao/.asdf/shims:/home/joao/.asdf/bin:/home/joao/.cargo/bin:/home/joao/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/joao/.local/share/JetBrains/Toolbox/scripts
+
+[ -f "/home/joao/.ghcup/env" ] && source "/home/joao/.ghcup/env" # ghcup-env
+# pnpm
+export PNPM_HOME="/home/joao/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
