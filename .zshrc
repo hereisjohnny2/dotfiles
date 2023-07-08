@@ -99,6 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
+alias cls="clear"
 
 source /home/joao/gnome-terminal/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -121,7 +122,7 @@ SPACESHIP_CHAR_SUFFIX=" "
 
 . $HOME/.asdf/asdf.sh
 fpath+=${ZDOTDIR:-~}/.zsh_functions
-export PATH=/home/joao/neovim/bin:/home/joao/.asdf/shims:/home/joao/.asdf/bin:/home/joao/.cargo/bin:/home/joao/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/joao/.local/share/JetBrains/Toolbox/scripts
+export PATH=/home/joao/neovim/bin:/home/joao/.asdf/shims:/home/joao/.asdf/bin:/home/joao/.cargo/bin:/home/joao/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/joao/.local/share/JetBrains/Toolbox/scripts:/home/joao/local/bin
 
 [ -f "/home/joao/.ghcup/env" ] && source "/home/joao/.ghcup/env" # ghcup-env
 # pnpm
